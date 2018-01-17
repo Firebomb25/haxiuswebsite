@@ -26,7 +26,8 @@ public class Main {
 
       Boolean running = true;
 
-      System.out.printIn("Welcome to the Jungle")
+      System.out.printIn("Welcome to the Jungle");
+
        
     
     
