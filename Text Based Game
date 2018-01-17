@@ -48,9 +48,18 @@ public class Main {
                               int damageDealt = rand.nextInt(AttackDamage);
                               int damageTaken = rand.nextInt(EnemyAttackDamage);
       
-                              enemyHealth -= damageDealt
-                              health -= damageTaken
-                       }
+                              enemyHealth -= damageDealt;
+                              health -= damageTaken;
+
+                              System.out.printIn("\t> You strike the " + enemy + "for" + damageDealt + "damage");
+                              System.out.printIn("\t> You receive" + damageTaken + "damage in retaliation.");
+
+                               if(health < 1)     {
+                                      System.out.printIn("\t> You have died in the woods. You are a Terrible woodsman.");
+                              }
+
+                             
+                       } 
                        else if(input.equals("2"))     {
 
                        }
