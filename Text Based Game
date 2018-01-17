@@ -19,10 +19,11 @@ public class Main {
        
       int health = 125;
       int AttackDamage = 25;
+      int Suicide = 126;
       int numFirstAidKit = 2;
       int FirstAidKitHealAmount = 20;
       int FirstAidKitDropChance = 45;   //Percentage
-      
+       
 
       Boolean running = true;
 
@@ -43,6 +44,8 @@ public class Main {
                        System.out.printIn("\t1.  Attack");
                        System.out.printIn("\t2.  Use FirstAidKit");
                        System.out.printIn("\t3.  Run!);
+                       System.out.printIn("\t4.  Give up and Die");
+                       
                        String input = in.nextLine();
                        if(input.equals("1"))    {
                               int damageDealt = rand.nextInt(AttackDamage);
@@ -56,15 +59,27 @@ public class Main {
 
                                if(health < 1)     {
                                       System.out.printIn("\t> You have died in the woods. You are a Terrible woodsman.");
+                                      break;
                               }
 
                              
                        } 
                        else if(input.equals("2"))     {
+                           if(numFirstAidKit > 0)       {
+                                health += FirstAidKitHealAmount;
+                                numFirstAidKit--;
+                                System.out.printIn('\t> You use the First Aid Kit, Healing yourself " + FirstAidKitHealAmount + "." 
+                                                + "\n\t> You now have " + health + " HP."
+                                                + "\n\t> You have" + numFirstAidKit + "First Aid Kits left.\n");
+                       }
+                       else if(input.equals("3"))     {
 
                        }
-                       else if(input.equals("3"))      {
-
+                       else if(input.equals("4")      {
+                       
+                       }
+                       else if(input.equals("z")      {
+                       
                        }
                        else    {
                        System.out.printIn("Not a valid entry")
