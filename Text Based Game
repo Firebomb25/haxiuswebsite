@@ -10,6 +10,7 @@ public class Main {
       Scanner in = new scanner(System.in);
       Random rand = new Random();
       
+      String[ ] enemies = { }
     
     
     
