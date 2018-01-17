@@ -10,7 +10,7 @@ public class Main {
       Scanner in = new scanner(System.in);
       Random rand = new Random();
       
-      String[ ] enemies = { }
+      String[ ] enemies = {"Wolf", "Bear", "Cougar", "Lion", "Tiger", "Cobra", "Alligator" }; 
     
     
     
