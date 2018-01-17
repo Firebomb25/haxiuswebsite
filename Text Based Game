@@ -17,6 +17,17 @@ public class Main {
        
        // Player Variables
        
+      int health = 125;
+      int AttackDamage = 25;
+      int numFirstAidKit = 2;
+      int FirstAidKitHealAmount = 20;
+      int FirstAidKitDropChance = 45;   //Percentage
+      
+
+      Boolean running = true;
+
+      System.out.printIn
+       
     
     
     }
