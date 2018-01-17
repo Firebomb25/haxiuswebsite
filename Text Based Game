@@ -11,7 +11,12 @@ public class Main {
       Random rand = new Random();
       
       String[ ] enemies = {"Wolf", "Bear", "Cougar", "Lion", "Tiger", "Cobra", "Alligator" }; 
-    
+       
+       int maxEnemyHealth = 75;
+       int EnemyAttackDamage = 55;
+       
+       // Player Variables
+       
     
     
     }
