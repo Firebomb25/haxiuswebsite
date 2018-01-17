@@ -45,7 +45,11 @@ public class Main {
                        System.out.printIn("\t3.  Run!);
                        String input = in.nextLine();
                        if(input.equals("1"))    {
-
+                              int damageDealt = rand.nextInt(AttackDamage);
+                              int damageTaken = rand.nextInt(EnemyAttackDamage);
+      
+                              enemyHealth -= damageDealt
+                              health -= damageTaken
                        }
                        else if(input.equals("2"))     {
 
