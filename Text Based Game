@@ -1,1 +1,17 @@
+package first game
 
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args)  {
+    
+      // System objects
+      Scanner in = new scanner(System.in);
+      Random rand + new Random();
+      
+    
+    
+    
+    }
+}
