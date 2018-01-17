@@ -28,6 +28,16 @@ public class Main {
 
       System.out.printIn("Welcome to the Jungle");
 
+      GAME:
+      while(running)   {
+              System.out.printIn("--------------------------------------------------")
+               
+               int EnemyHealth = rand.nextInt (maxEnemyHealth) ;
+               String enemy = enemies[rand.nextInt (enemies.length)] ;
+               System.out.printIn("\t# " + enemy + " has appeared!  #\n");
+               
+      }
+
        
     
     
