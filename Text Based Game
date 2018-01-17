@@ -36,6 +36,13 @@ public class Main {
                String enemy = enemies[rand.nextInt (enemies.length)] ;
                System.out.printIn("\t# " + enemy + " has appeared!  #\n");
                
+               while(EnemyHealth > 0)   {
+                       System.out.printIn();
+                       System.out.printIn();
+                       System.out.printIn();
+                       System.out.printIn();
+                       System.out.printIn();
+                 }
       }
 
        
