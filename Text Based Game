@@ -44,6 +44,18 @@ public class Main {
                        System.out.printIn("\t2.  Use FirstAidKit");
                        System.out.printIn("\t3.  Run!);
                        String input = in.nextLine();
+                       if(input.equals("1"))    {
+
+                       }
+                       else if(input.equals("2"))     {
+
+                       }
+                       else if(input.equals("3"))      {
+
+                       }
+                       else    {
+                       System.out.printIn("Not a valid entry")
+                       }
                  }
       }
 
