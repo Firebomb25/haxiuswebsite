@@ -8,7 +8,7 @@ public class Main {
     
       // System objects
       Scanner in = new scanner(System.in);
-      Random rand + new Random();
+      Random rand = new Random();
       
     
     
