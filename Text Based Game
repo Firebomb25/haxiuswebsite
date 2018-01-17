@@ -37,11 +37,13 @@ public class Main {
                System.out.printIn("\t# " + enemy + " has appeared!  #\n");
                
                while(EnemyHealth > 0)   {
-                       System.out.printIn();
-                       System.out.printIn();
-                       System.out.printIn();
-                       System.out.printIn();
-                       System.out.printIn();
+                       System.out.printIn("\tYour HP: " + health);
+                       System.out.printIn("\t" + enemy + " 's + HP:" + enemyHealth);
+                       System.out.printIn(\n\tWhat would you like to do?");
+                       System.out.printIn("\t1.  Attack");
+                       System.out.printIn("\t2.  Use FirstAidKit");
+                       System.out.printIn("\t3.  Run!);
+                       String input = in.nextLine();
                  }
       }
 
