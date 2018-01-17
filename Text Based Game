@@ -27,24 +27,24 @@ public class Main {
 
       Boolean running = true;
 
-      System.out.printIn("Welcome to the Jungle");
+      System.out.println("Welcome to the Jungle");
 
       GAME:
       while(running)   {
-              System.out.printIn("--------------------------------------------------")
+              System.out.println("--------------------------------------------------")
                
                int EnemyHealth = rand.nextInt (maxEnemyHealth) ;
                String enemy = enemies[rand.nextInt (enemies.length)] ;
-               System.out.printIn("\t# " + enemy + " has appeared!  #\n");
+               System.out.println("\t# " + enemy + " has appeared!  #\n");
                
                while(EnemyHealth > 0)   {
-                       System.out.printIn("\tYour HP: " + health);
-                       System.out.printIn("\t" + enemy + " 's + HP:" + enemyHealth);
-                       System.out.printIn(\n\tWhat would you like to do?");
-                       System.out.printIn("\t1.  Attack");
-                       System.out.printIn("\t2.  Use FirstAidKit");
-                       System.out.printIn("\t3.  Run!);
-                       System.out.printIn("\t4.  Give up and Die");
+                       System.out.println("\tYour HP: " + health);
+                       System.out.println("\t" + enemy + " 's + HP:" + enemyHealth);
+                       System.out.println(\n\tWhat would you like to do?");
+                       System.out.println("\t1.  Attack");
+                       System.out.println("\t2.  Use FirstAidKit");
+                       System.out.println("\t3.  Run!);
+                       System.out.println("\t4.  Give up and Die");
                        
                        String input = in.nextLine();
                        if(input.equals("1"))    {
@@ -54,11 +54,11 @@ public class Main {
                               enemyHealth -= damageDealt;
                               health -= damageTaken;
 
-                              System.out.printIn("\t> You strike the " + enemy + "for" + damageDealt + "damage");
-                              System.out.printIn("\t> You receive" + damageTaken + "damage in retaliation.");
+                              System.out.println("\t> You strike the " + enemy + "for" + damageDealt + "damage");
+                              System.out.println("\t> You receive" + damageTaken + "damage in retaliation.");
 
                                if(health < 1)     {
-                                      System.out.printIn("\t> You have died in the woods. You are a Terrible woodsman.");
+                                      System.out.println("\t> You have died in the woods. You are a Terrible woodsman.");
                                       break;
                               }
 
@@ -68,22 +68,36 @@ public class Main {
                            if(numFirstAidKit > 0)       {
                                 health += FirstAidKitHealAmount;
                                 numFirstAidKit--;
-                                System.out.printIn('\t> You use the First Aid Kit, Healing yourself " + FirstAidKitHealAmount + "." 
+                                System.out.println("\t> You use the First Aid Kit, Healing yourself " + FirstAidKitHealAmount + "." 
                                                 + "\n\t> You now have " + health + " HP."
                                                 + "\n\t> You have" + numFirstAidKit + "First Aid Kits left.\n");
+                        }                        
+                        else {
+                            System.out.println(" You have no First Aid Kits left! You can find First Aid Kits by defeating enemies.\n");
+                        }
                        }
                        else if(input.equals("3"))     {
-
+                           System.out.println("\t> You have run away from the" + enemy + "!");
+                           continue GAME;
                        }
                        else if(input.equals("4")      {
-                       
+                            health -= Suicide
+                            System.out.println("\t> You have chosen to take the easy way out!");
+                            
                        }
                        else if(input.equals("z")      {
+                            System.out.println("\t> Sieg Heil!!!!");
+                            health -= Suicide;
+                            
                        
                        }
                        else    {
-                       System.out.printIn("Not a valid entry")
+                       System.out.println("\tNot a valid entry")
                        }
+                 }
+                 
+                 if(health < 1) {
+                   System.out.println("  
                  }
       }
 
