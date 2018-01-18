@@ -1,13 +1,18 @@
-package first game
+package javaapplication1;
+
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class Main {
+/**
+ *
+ * @author Home
+ */
+public class FirstTextBasedGame {
     public static void main(String[] args)  {
     
       // System objects
-      Scanner in = new scanner(System.in);
+      Scanner in = new Scanner(System.in);
       Random rand = new Random();
       
       String[ ] enemies = {"Wolf", "Bear", "Cougar", "Lion", "Tiger", "Cobra", "Alligator" }; 
@@ -31,7 +36,8 @@ public class Main {
 
       GAME:
       while(running)   {
-              System.out.println("--------------------------------------------------")
+              
+          System.out.println("--------------------------------------------------");
                
                int EnemyHealth = rand.nextInt (maxEnemyHealth) ;
                String enemy = enemies[rand.nextInt (enemies.length)] ;
@@ -39,11 +45,11 @@ public class Main {
                
                while(EnemyHealth > 0)   {
                        System.out.println("\tYour HP: " + health);
-                       System.out.println("\t" + enemy + " 's + HP:" + enemyHealth);
-                       System.out.println(\n\tWhat would you like to do?");
+                       System.out.println("\t" + enemy +"'s" + "HP:" + EnemyHealth);
+                       System.out.println("\n\tWhat would you like to do?");
                        System.out.println("\t1.  Attack");
                        System.out.println("\t2.  Use FirstAidKit");
-                       System.out.println("\t3.  Run!);
+                       System.out.println("\t3.  Run!");
                        System.out.println("\t4.  Give up and Die");
                        
                        String input = in.nextLine();
@@ -51,11 +57,11 @@ public class Main {
                               int damageDealt = rand.nextInt(AttackDamage);
                               int damageTaken = rand.nextInt(EnemyAttackDamage);
       
-                              enemyHealth -= damageDealt;
+                              EnemyHealth -= damageDealt;
                               health -= damageTaken;
 
-                              System.out.println("\t> You strike the " + enemy + "for" + damageDealt + "damage");
-                              System.out.println("\t> You receive" + damageTaken + "damage in retaliation.");
+                              System.out.println("\t> You strike the " + enemy + " for " + damageDealt + " damage");
+                              System.out.println("\t> You receive " + damageTaken + " damage in retaliation.");
 
                                if(health < 1)     {
                                       System.out.println("\t> You have died in the woods. You are a Terrible woodsman.");
@@ -80,26 +86,27 @@ public class Main {
                            System.out.println("\t> You have run away from the" + enemy + "!");
                            continue GAME;
                        }
-                       else if(input.equals("4")      {
-                            health -= Suicide
+                       else if(input.equals("4"))      {
+                            health -= Suicide;
                             System.out.println("\t> You have chosen to take the easy way out!");
                             break;
                             
                        }
-                       else if(input.equals("z")      {
+                       else if(input.equals("z"))      {
                             System.out.println("\t> Sieg Heil!!!!");
                             health -= Suicide;
                             break;
                        
                        }
                        else    {
-                       System.out.println("\tNot a valid entry")
+                       System.out.println("\tNot a valid entry");
                        }
                  }
                  
                  if(health < 1) {
                    System.out.println("Your body is found in the woods a few weeks later!");
-                   break;
+
+                   
                  } 
                  
                  System.out.println("----------------------------------------------------");
@@ -109,7 +116,7 @@ public class Main {
                     System.out.println(" # The " + enemy + " dropped a First Aid Kit! #");
                     System.out.println(" # You now have " + numFirstAidKit + " First Aid Kit[s]");
                  }
-                 System.out.println("---------------------------------")
+                 System.out.println("---------------------------------");
                  System.out.println("What would you like to do now?");
                  System.out.println("1. Continue Fighting");
                  System.out.println("2. Exit Woods");
@@ -126,13 +133,17 @@ public class Main {
                  }
                  else if(input.equals("2"))  {
                       System.out.println("You leave the woods, successful in you adventure!");
-                 }     
-                 
-                 
-      }
+                 }    break;
+                 }
 
+      System.out.println("#######################");
+      System.out.println("# THANKS FOR PLAYING! #");
+      System.out.println("#######################");
+      
        
     
     
     }
+
+
 }
