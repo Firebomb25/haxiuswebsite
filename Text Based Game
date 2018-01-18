@@ -130,7 +130,8 @@ public class FirstTextBasedGame {
                  }
                  else if(input.equals("2"))  {
                       System.out.println("You leave the woods, successful in you adventure!");
-                 }    break;
+                      break;
+                 }     
                  }
 
       System.out.println("#######################");
