@@ -83,12 +83,13 @@ public class Main {
                        else if(input.equals("4")      {
                             health -= Suicide
                             System.out.println("\t> You have chosen to take the easy way out!");
+                            break;
                             
                        }
                        else if(input.equals("z")      {
                             System.out.println("\t> Sieg Heil!!!!");
                             health -= Suicide;
-                            
+                            break;
                        
                        }
                        else    {
@@ -97,8 +98,8 @@ public class Main {
                  }
                  
                  if(health < 1) {
-                   System.out.println("  
-                 }
+                   System.out.println("Your body is found in the woods a few weeks later!");
+                 } 
       }
 
        
